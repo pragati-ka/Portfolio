@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar
+{
+  width: 4px;  /* for vertical scrollbars */
+  height: 4px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #6244C5;
+    width: min-content;
+}
+
+@layer components {
+    .paddingSectionSmall{
+        @apply pl-[32px] pr-[32px] pt-[48px] pb-[48px];
+    }
+
+    .paddingSection{
+        @apply pl-[80px] pr-[80px] pt-[96px] pb-[96px];
+    }
+
+    .paddingModal{
+        @apply pl-[80px] pr-[80px] pt-[40px] pb-[40px];
+    }
+
+    .btn-primary{
+        @apply bg-primary shadow-md md:shadow-lg shadow-primary p-3 pr-4 pl-4 rounded-lg text-sm md:p-4 md:pr-6 md:pl-6 md:rounded-xl hover:bg-purple text-white font-bold mt-10
+    }
+}
+
